@@ -11,9 +11,7 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
-
 // Main Styles
-
 .main {
     width: 100%;
     height: 100%;
@@ -31,23 +29,18 @@ body {
         overflow: hidden;
         position: relative;
     }
-
-
 @for $i from 1 through 24 {
     :nth-child(#{$i}) {
         animation-delay: (.8s*$i);
     }
 }
-
 i {
     position: absolute;
     width: 240rem;
     height: 20rem;
     border: 2px solid slateblue;    
     animation: animationTest  64s linear forwards infinite;
-
 }
-
     @keyframes animationTest {
         0% {
             transform:  rotateZ(0deg);
